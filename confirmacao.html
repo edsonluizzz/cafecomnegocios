@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscrição Confirmada – CaFÉ & Negócios</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ouro:#c8922a;
+    --ouro-light:#f5c842;
+    --verde:#3a7d3e;
+    --verde-light:#5ab05f;
+    --bg:#0d0a05;
+    --card-bg:#1a1008;
+    --white:#fdf6ec;
+    --muted:#a8906e;
+    --border:rgba(200,146,42,0.2);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--white);
+    font-family:"DM Sans",sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:2.5rem 5vw;
+  }
+  .card{
+    width:min(920px,100%);
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:2.4rem;
+    position:relative;
+    overflow:hidden;
+  }
+  .card:before{
+    content:"";
+    position:absolute;inset:0;
+    background:
+      radial-gradient(ellipse 60% 40% at 15% 10%, rgba(58,125,62,0.07) 0%, transparent 55%),
+      radial-gradient(ellipse 50% 50% at 85% 80%, rgba(200,146,42,0.06) 0%, transparent 55%);
+    pointer-events:none;
+  }
+  .inner{position:relative;z-index:1;}
+  .label{
+    font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--verde-light);margin-bottom:.9rem;
+    font-family:"Syne",sans-serif;
+  }
+  h1{
+    font-family:"Syne",sans-serif;
+    font-size:clamp(1.6rem,3vw,2.2rem);
+    line-height:1.15;
+    margin-bottom:1rem;
+  }
+  p{color:var(--muted);line-height:1.8;margin-bottom:1.1rem;font-size:.95rem;}
+  .box{
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:1.1rem 1.2rem;
+    margin:1.2rem 0 1.4rem;
+    background:rgba(255,255,255,0.03);
+  }
+  .box strong{color:var(--ouro-light);}
+  .actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.6rem;}
+  .btn{
+    display:inline-block;
+    background:linear-gradient(135deg,var(--ouro),#a8721e);
+    color:#1a0a00;
+    font-family:"Syne",sans-serif;
+    font-weight:800;
+    font-size:.95rem;
+    padding:.9rem 1.4rem;
+    border-radius:10px;
+    text-decoration:none;
+    letter-spacing:.04em;
+    box-shadow:0 0 28px rgba(200,146,42,0.25);
+    transition:transform .2s;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn2{
+    display:inline-block;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(200,146,42,0.25);
+    color:var(--white);
+    font-family:"Syne",sans-serif;
+    font-weight:800;
+    font-size:.9rem;
+    padding:.9rem 1.2rem;
+    border-radius:10px;
+    text-decoration:none;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="inner">
+      <div class="label">Confirmação</div>
+      <h1>Recebemos sua inscrição ✅</h1>
+      <p>Se você já enviou o formulário, agora é só seguir os próximos passos abaixo.</p>
+
+      <div class="box">
+        <p><strong>Próximos passos</strong></p>
+        <p>1) Aguarde a validação dos dados e do comprovante (quando aplicável).</p>
+        <p>2) Assim que confirmado, você receberá a orientação final pelo canal informado no formulário.</p>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="index.html">Voltar para o site</a>
+        <a class="btn2" href="https://forms.gle/13nhmQGHpFaqLDTf7" target="_blank" rel="noopener">Abrir formulário novamente</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
